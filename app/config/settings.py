@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # third part
     # local apps
     'users.apps.UsersConfig',
+    'dishes.apps.DishesConfig',
 ]
 
 MIDDLEWARE = [
