@@ -2,10 +2,11 @@ from django.db import models
 from django.utils.text import slugify
 
 from dishes.validators import validate_file_type
+from utilities.dishmark_model import DishMarkModel
 from utilities.timestamp_model import TimeStampModel
 
 
-class Soup(TimeStampModel):
+class Soup(TimeStampModel, DishMarkModel):
     name = models.CharField(max_length=50)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
