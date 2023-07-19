@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 
+from dishes.validators import validate_file_type
 from utilities.timestamp_model import TimeStampModel
 
 
@@ -22,3 +23,8 @@ class Soup(TimeStampModel):
     class Meta:
         verbose_name = "Soup"
         verbose_name_plural = "Soups"
+
+
+class Picture(TimeStampModel):
+    soup = models.ForeignKey('Soup', on_delete=models.CASCADE, related_name='soup_image')
+    image = models.FileField(upload_to='images/', validators=[validate_file_type])

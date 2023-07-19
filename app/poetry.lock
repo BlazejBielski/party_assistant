@@ -355,6 +355,17 @@ docs = ["sphinx", "sphinx-rtd-theme"]
 testing = ["Django", "django-configurations (>=2.0)"]
 
 [[package]]
+name = "python-magic"
+version = "0.4.27"
+description = "File type identification using libmagic"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+files = [
+    {file = "python-magic-0.4.27.tar.gz", hash = "sha256:c1ba14b08e4a5f5c31a302b7721239695b2f0f058d125bd5ce1ee36b9d9d3c3b"},
+    {file = "python_magic-0.4.27-py2.py3-none-any.whl", hash = "sha256:c212960ad306f700aa0d01e5d7a325d20548ff97eb9920dcd29513174f0294d3"},
+]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.4"
 description = "A non-validating SQL parser."
@@ -384,4 +395,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "09ad21562552b2b9b3f6f2be6fe3ad56190c8924d13a41d25572a7e6a13df6eb"
+content-hash = "9ea70d40f01524061e1924d7f73bb8f25e5b8971a701d409511761d83474182c"
