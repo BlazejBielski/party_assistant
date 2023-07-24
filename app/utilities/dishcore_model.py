@@ -5,11 +5,11 @@ from dishes.validators import validate_file_type
 
 
 class DishCoreModel(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     slug = models.SlugField(blank=True, max_length=50, unique=True)
-    image = models.FileField(upload_to='images/', validators=[validate_file_type])
+    image = models.FileField(upload_to="images/", validators=[validate_file_type])
 
     def __str__(self):
         return self.name

@@ -6,7 +6,6 @@ User = get_user_model()
 
 
 class UserAdminConfig(UserAdmin):
-
     model = User
     search_fields = ("email", "username")
     list_filter = ("email", "username", "is_active", "is_staff")
