@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # third part
     "magic",
+    "crispy_forms",
+    "crispy_bootstrap5",
     # local apps
     "users.apps.UsersConfig",
     "dishes.apps.DishesConfig",
@@ -133,3 +135,7 @@ MEDIA_URL = "media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
 IMAGE_TYPES = ["jpeg", "png", "jpg"]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
