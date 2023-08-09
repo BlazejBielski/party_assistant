@@ -1,0 +1,12 @@
+{%  extends "base.html" %}
+
+{% block container %}
+                <h2>Soups:</h2>
+                <ul>
+                    {% for soup in soups %}
+                    <li><a>{{ soup.soup_name }}</a></li>
+                    {% endfor %}
+
+                </ul>
+
+{% endblock %}
